@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryFeline.TaskService", "BinaryFeline.TaskService\BinaryFeline.TaskService.csproj", "{2CBCC171-BDDC-4966-A41C-D6A67F598D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskServiceRepository", "TaskServiceRepository\TaskServiceRepository.csproj", "{504339B4-3714-4529-941A-ED584385EFBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CBCC171-BDDC-4966-A41C-D6A67F598D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBCC171-BDDC-4966-A41C-D6A67F598D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBCC171-BDDC-4966-A41C-D6A67F598D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBCC171-BDDC-4966-A41C-D6A67F598D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{504339B4-3714-4529-941A-ED584385EFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{504339B4-3714-4529-941A-ED584385EFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{504339B4-3714-4529-941A-ED584385EFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{504339B4-3714-4529-941A-ED584385EFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

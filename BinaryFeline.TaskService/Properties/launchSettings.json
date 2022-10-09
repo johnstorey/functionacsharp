@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BinaryFeline.TaskService": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7105",
+      "launchBrowser": false
+    }
+  }
+}
