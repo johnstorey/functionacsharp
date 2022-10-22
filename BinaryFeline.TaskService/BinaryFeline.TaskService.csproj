@@ -2,8 +2,11 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <AzureFunctionsVersion>V4</AzureFunctionsVersion>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Include="LanguageExt.Sys" Version="4.2.9" />
+        <PackageReference Include="LanguageExt.SysX" Version="4.2.9" />
         <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.1.1" />
         <PackageReference Include="OneOf" Version="3.0.223" />
         <PackageReference Include="ValueOf" Version="2.0.31" />

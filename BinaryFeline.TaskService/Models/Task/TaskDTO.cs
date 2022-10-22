@@ -1,8 +1,11 @@
 using System;
+using System.Runtime.InteropServices.ComTypes;
 using OneOf;
 using BinaryFeline.TaskService.Errors;
-using BinaryFeline.TaskService.Models.Task;
-using OneOf.Types;
+using LanguageExt;
+using static LanguageExt.Prelude;
+using LanguageExt.UnsafeValueAccess;
+using Some = OneOf.Types.Some;
 
 namespace BinaryFeline.TaskService.Models.Task;
 
@@ -10,31 +13,13 @@ namespace BinaryFeline.TaskService.Models.Task;
 public class TaskDTO
 {
     public Guid Id { get; set; }
-    public string ShortDesc { get; set; }
-    public string LongDesc { get; set; }
+    public String ShortDesc { get; set; }
+    public String LongDesc { get; set; }
 
     public TaskDTO(Guid id, String shortDesc, String longDesc)
     {
         Id = id;
         ShortDesc = shortDesc;
         LongDesc = longDesc;
-    }
-
-    public TaskDTO MapRecordToDTO(TaskEntity de)
-    {
-        TaskDTO result = new TaskDTO(de.Id, de.ShortDesc.Value, de.LongDesc.Value);
-
-        return result;
-    }
-
-    public OneOf<TaskEntity, InvalidId, InvalidLongDesc, InvalidShortDesc>  MapDTOToRecord(TaskDTO dto)
-    {
-        TaskEntity te = new TaskEntity(
-            dto.Id,
-            ShortDescType.From(dto.ShortDesc),
-            LongDescType.From(dto.LongDesc)
-            );
-
-        return te;
     }
 }
